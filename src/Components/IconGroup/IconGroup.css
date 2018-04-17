@@ -1,0 +1,14 @@
+div#toggle-mobile-menu > div.icon-group {
+	display: none;
+}
+@media (max-width: 799px) {
+	div#toggle-mobile-menu > div.icon-group {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		margin-top: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: rgb(249, 252, 243);
+	}
+}

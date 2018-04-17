@@ -1,0 +1,7 @@
+div#homeImg {
+	background: url('../../img/liber-home.jpg') no-repeat;
+	background-size: cover;
+	height: 65vh;
+}
+@media (min-width: 480px) and (max-width: 799px) { div#homeImg {height: 35vh;} }
+@media (max-width: 479px) { div#homeImg {height: 20vh;} }

@@ -1,0 +1,127 @@
+div#about-us-footer, div#opening-hours-footer, div#recent-posts-footer {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 20%;
+}
+div#about-us-footer p, div#opening-hours-footer > div ul > li,
+div#recent-posts-footer > div > ul > li {
+	font-size: 0.9em;
+}
+div#about-us-footer p:first-of-type, div#opening-hours-footer p:first-of-type,
+div#recent-posts-footer p {
+	text-transform: uppercase;
+	font-family: 'Teko';
+	font-size: 1.8em;
+    color: #404040;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+div#about-us-footer, div#opening-hours-footer {
+	margin-right: 2%;
+}
+div#about-us-footer p, div#opening-hours-footer > div > ul > li {
+	color: #707070;
+}
+div#about-us-footer b, div#opening-hours-footer b {
+	color: #404040;
+}
+div#about-us-footer a, div#recent-posts-footer a {
+	color: #3A8013;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out; 
+}
+div#about-us-footer a:hover, div#recent-posts-footer a:hover {
+	color: #404040;
+	text-decoration: underline;
+}
+div#about-us-footer a {
+	font-weight: bold;
+}
+div#about-us-footer img {
+	width: 140px;
+	height: 85px;
+}
+div#about-us-footer span {
+	font-weight: bold;
+	color: #3A8013;
+}
+div#opening-hours-footer > div {
+	width: 100%;
+	border: 2px solid #3A8013;
+}
+div#opening-hours-footer > div > ul {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+div#opening-hours-footer > div > ul > li {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	line-height: 3;
+	border-bottom: 1px dashed #ebefe3;
+}
+div#opening-hours-footer > div > ul > li:last-of-type {
+	border: none;
+}
+div#recent-posts-footer > div > ul {
+	padding-left: 0;
+	margin: 0;
+}
+div#recent-posts-footer > div > ul > li {
+	line-height: 2;
+	border-bottom: 1px solid #ebefe3;
+	justify-content: initial;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div#recent-posts-footer > div > ul > li > a {
+	padding-right: 0;
+}
+div#recent-posts-footer p {
+	text-transform: uppercase;
+	font-family: 'Teko';
+	font-size: 1.8em;
+    color: #404040;
+}
+div.instagram-food {
+	width: 67px;
+	height: 67px;
+}
+div#instagram-foods {
+	display: flex;
+	flex-flow: row wrap;
+}
+div.instagram-food {
+	width: 18%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+div.instagram-food:nth-of-type(1) {background-image: url('../../img/spinach-pasta.jpg');}
+div.instagram-food:nth-of-type(2) {background-image: url('../../img/tumeric-latte.jpg');}
+div.instagram-food:nth-of-type(3) {background-image: url('../../img/potato-cakes.jpg');}
+div.instagram-food:nth-of-type(4) {background-image: url('../../img/overnight-oats.jpg');}
+div.instagram-food:nth-of-type(5) {background-image: url('../../img/chocolate-porridge.jpg');}
+hr {
+	width: 64%;
+	border: 1px solid #ebefe3; 
+}
+@media (max-width: 1200px) {
+	div.foods-row + div {
+		justify-content: space-around;
+	}
+	div#about-us-footer, div#opening-hours-footer, div#recent-posts-footer {
+		width: 30%;
+		margin-right: 0;
+	}
+}
+@media (max-width: 800px) {
+	div.foods-row + div {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+	div#about-us-footer, div#opening-hours-footer, div#recent-posts-footer {
+		width: 90%;
+	}
+}

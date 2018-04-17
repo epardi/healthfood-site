@@ -1,0 +1,21 @@
+nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+@media (min-width: 800px) and (max-width: 1500px) {
+	nav {
+		justify-content: center;
+	}
+}
+@media (max-width: 1500px) {
+	nav {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

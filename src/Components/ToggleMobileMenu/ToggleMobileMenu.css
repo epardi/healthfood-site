@@ -1,0 +1,30 @@
+div#toggle-mobile-menu span.fa-bars {
+	display: none;
+}
+div#toggle-mobile-menu span.fa-bars:before {
+	padding-right: 10px;
+}
+div#toggle-mobile-menu span.fa-bars:after {
+	content: 'MENU';
+}
+span.fa {
+	padding-right: 10px;
+	cursor: pointer;
+	color: #3A8013;
+	transition: color 0.2s ease-in-out;
+}
+@media (max-width: 799px) {span.fa{padding-right:  20px;}}
+span.fa:hover {
+	color: #404040;
+}
+@media (max-width: 799px) {
+	div#toggle-mobile-menu span.fa-bars {
+		display: block;
+	}
+	div#toggle-mobile-menu {
+		position: relative;
+		margin-left: 5%;
+		width: 90%;
+		margin-right: 5%;
+	}
+}

@@ -1,0 +1,10 @@
+div.nav-right {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+@media (max-width: 799px) {
+	div.nav-right {
+		display: none;
+	}
+}

@@ -1,0 +1,24 @@
+div.map-side {
+    width: 100%;
+    display: flex; 
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+}
+div.map-side h3 {
+    text-transform: uppercase;
+    color: #404040;
+    margin: 0;
+    font-family: 'Teko';
+    font-size: 2em;
+    font-weight: normal;
+}
+div.map-side hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(235, 239, 227);
+}
+div.map-side hr + div {
+    padding-top: 5%;
+}

@@ -1,0 +1,64 @@
+div.menu-offer-container {
+    min-height: 80vh;
+    background-image: url('../../img/smoothie-lg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.menu-offer-card {
+    width: 60%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3.5% 10%;
+    box-sizing: border-box;
+}
+div.menu-offer-card h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #404040;
+    text-decoration: underline;
+    text-decoration-color: #3A8013;
+    text-transform: uppercase;
+}
+div.menu-offer-card p {
+    line-height: 2;
+    margin: 2em;
+}
+div.menu-offer-card button {
+    width: 210px;
+	background-color: transparent;
+	padding: 15px;
+	border: 2px solid #3A8013;
+	cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #404040;
+	transition: all 0.2s ease-in-out;
+}
+div.menu-offer-card button:hover {
+    width: 220px;
+	color: #3A8013;
+	border-color: #404040;
+}
+@media (max-width: 800px) {
+    div.menu-offer-card {
+        width: 90%;
+    }
+}
+@media (max-width: 550px) {
+    div.menu-offer-card {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 1.5% 5%;
+    }
+    div.menu-offer-card button {
+        margin-bottom: 10%;
+    }
+}

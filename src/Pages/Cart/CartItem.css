@@ -1,0 +1,15 @@
+div.cart-item {
+    display: grid;
+    grid-template-columns: auto auto 20% auto auto auto;
+}
+div.cart-item:last-of-type {
+	border-right: none;
+}
+div.cart-heading {
+	min-height: 50px;
+}
+div.cart-value {
+	border-top: 2px solid #707070;
+	border-bottom: 2px solid #707070;
+	min-height: 50px;
+}

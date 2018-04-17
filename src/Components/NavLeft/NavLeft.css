@@ -1,0 +1,27 @@
+div.nav-left {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+div.nav-left p, div.nav-left span {
+	font-weight: bold;
+}
+div.nav-left span {
+	color: #3A8013;
+}
+div#logo {
+	background: url('../../img/liber-logo.png');
+	width: 140px;
+	height: 85px;
+}
+@media (max-width: 1500px) {
+	div#logo {
+		margin-left: 2.5%;
+	}
+}
+@media (max-width: 799px) {
+	div.nav-left span {
+		display: none;
+	}
+}

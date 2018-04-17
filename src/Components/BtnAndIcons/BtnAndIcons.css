@@ -1,0 +1,37 @@
+div#btn-and-icons {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+div#btn-and-icons button {
+	margin-right: 100px;
+	background-color: white;
+	color: #3A8013;
+	text-transform: uppercase;
+	border: 2px solid #3A8013;
+	padding: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: border-color 0.2s ease-in-out;
+}
+div#btn-and-icons button:hover {
+	border-color: #404040;
+}
+@media (min-width: 799px) and (max-width: 1000px) {
+	div#btn-and-icons {
+		justify-content: center;
+	}
+	div#btn-and-icons button {
+		padding: 10px;
+		margin-right: 25px;
+	}
+}
+@media (max-width: 799px) {
+	div#btn-and-icons button {
+		display: none;
+	}
+	div#btn-and-icons div.icon-group span:not(:last-of-type) {
+		display: none;
+	}
+}

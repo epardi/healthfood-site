@@ -1,0 +1,70 @@
+div#homeImg div#liberCard {
+	display: block;
+	position: relative;
+	max-width: 27%;
+	top: 23.5%;
+	left: 16%;
+	background-color: white;
+	padding: 30px;
+}
+div#homeImg div#liberCard button, div#liberCard button  {
+	margin-right: 100px;
+	background-color: white;
+	text-transform: uppercase;
+	border: 2px solid #3A8013;
+	padding: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 220px;
+	color: #404040;
+	transition: all 0.2s linear;
+}
+div#homeImg div#liberCard button span.fa-arrow-right, div#liberCard button span.fa-arrow-right {
+	font-size: initial;
+	font-weight: initial;
+	padding-right: 0;
+	padding-left: 10px;
+}
+div#homeImg div#liberCard button:hover, div#liberCard button:hover {
+	width: 230px;
+	color: #3A8013;
+	border-color: #404040; 
+}
+div#homeImg div#liberCard p, div#liberCard p {
+	line-height: 2; 
+	margin-top: 0;
+}
+div#homeImg div#liberCard p:first-of-type, div#liberCard p:first-of-type {
+	color: #3A8013;
+}
+div#homeImg div#liberCard h1, div#liberCard h1 {
+	font-size: 5em;
+	font-weight: bold;
+	color: #404040;
+	text-transform: uppercase;
+	line-height: 0.9;
+	letter-spacing: 4px;
+	margin: 0;
+}
+div#liberCard {
+	display: none;
+}
+@media (max-width: 1600px) {div#homeImg div#liberCard {min-width: 400px;}}
+@media (min-width: 1601px) and (max-width: 1800px) {div#homeImg div#liberCard {left: 18%;} }
+@media (min-width: 1401px) and (max-width: 1600px) {div#homeImg div#liberCard {left: 20%;} }
+@media (min-width: 1201px) and (max-width: 1400px) {div#homeImg div#liberCard {left: 23%;} }
+@media (min-width: 1001px) and (max-width: 1200px) {div#homeImg div#liberCard {left: 27%;} }
+@media (min-width: 801px) and (max-width: 1000px) {div#homeImg div#liberCard {left: 32%;} }
+@media (max-width: 800px) {
+	div#homeImg div#liberCard {
+		display: none;
+	}
+	div#liberCard {
+		display: block;
+		padding: 30px;
+		top: 0;
+		left: 0;
+		width: auto;
+		background-color: rgb(249, 252, 243);
+	}
+}

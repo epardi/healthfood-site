@@ -1,0 +1,147 @@
+div.about-cols-container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	height: max-content;
+	max-width: 1180px;
+	margin-left: 17.5%;
+	margin-right: 17.5%; 
+}
+div.about-col {
+	width: 32%;
+	height: 100%;
+}
+div.about-col p:first-of-type {
+	color: #707070;
+	margin-bottom: 0.1em;
+}
+div.about-col h1 {
+	font-size: 4em;
+	color: #404040;
+	margin-top: 0;
+}
+div.about-col p:nth-of-type(2),
+div.about-col p:nth-of-type(3) {
+	line-height: 2;
+}
+div.about-col p:nth-of-type(2) {
+	font-weight: bold;
+}
+div.about-col p:first-of-type,
+div.about-col h1,
+div.about-col button {
+	text-transform: uppercase;
+}
+div.about-col button {
+	width: 220px;
+	background-color: white;
+	padding: 15px;
+	border: 2px solid #3A8013;
+	cursor: pointer;
+	font-weight: bold;
+	color: #404040;
+	transition: all 0.2s linear;
+}
+div.about-col button:hover {
+	width: 230px;
+	color: #3A8013;
+	border-color: #404040;
+}
+div.about-col:nth-of-type(2) {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+div.john-doe {
+	background-image: url('../../img/john-doe.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 460px;
+	width: 300px;
+}
+div.john-doe-signature {
+	background-image: url('../../img/john-doe-signature.jpg');
+	height: 70px;
+	width: 203px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+div.opening-hours-img {
+	background-image: url('../../img/opening-hours.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 39vh;
+}
+div.hours {
+	display: flex;
+	flex-flow: column nowrap;
+	border: 2px solid #3A8013;
+    padding: 10px;
+}
+div.hours h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Teko';
+	font-size: 2em;
+	font-weight: normal;
+	color: #404040;
+	margin: 0.5em 0 1em 0;
+}
+div.hours-list-item {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	line-height: 1.5;
+}
+div.hours-list-item:first-of-type,
+div.hours-list-item:nth-of-type(2) {
+	border-bottom: 1px solid #3A8013;
+}
+div.hours-list-item span:last-of-type {
+	text-transform: uppercase;
+}
+@media (max-width: 1300px) {
+	div.about-col {
+		width: 30%;
+	}
+	div.about-col:nth-of-type(3) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+}
+@media (max-width: 1300px) {
+	div.about-cols-container {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	div.about-col {
+		width: 34%;
+	}
+}
+@media (max-width: 900px) {
+	div.about-cols-container {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	div.about-col {
+		width: 100%;
+	}
+	div.about-col:first-of-type,
+	div.about-col:nth-of-type(2) {
+		margin-bottom: 10%;
+	}
+	div.about-col:nth-of-type(2) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

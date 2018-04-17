@@ -1,0 +1,103 @@
+div.contact-container {
+    margin: 5% 20%;
+}
+div.form-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+div.form-with-paragraph {
+    width: 63%;
+    display: flex;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+div.form-with-paragraph > p {
+    line-height: 2;
+    margin-top: 0;
+}
+form.contact-form {
+    height: max-content;
+    background-color: rgb(249, 252, 243);
+    padding: 40px;
+}
+form.contact-form * {
+    box-sizing: border-box;
+}
+form.contact-form *:not(textarea) {
+    width: 40%;
+    margin-bottom: 0;
+}
+form.contact-form input,
+form.contact-form textarea {
+    margin-bottom: 5%;
+    padding: 5px;
+    line-height: 2;
+    border: 2px solid rgb(235, 239, 227);
+    outline-color: rgb(235, 239, 227);
+    transition: all 0.2s ease-in-out;
+}
+form.contact-form input,
+form.contact-form button {
+    min-width: 350px;
+}
+form.contact-form textarea {
+    width: 100%;
+}
+form.contact-form input:focus,
+form.contact-form textarea:focus {
+    border-color: rgb(212, 219, 199);
+    box-shadow: none;
+    outline-style: initial;
+}
+form.contact-form button {
+    line-height: 2;
+    margin-bottom: 2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #404040;
+    font-weight: bold;
+    border: 2px solid #3A8013;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+form.contact-form button:hover {
+    color: #3A8013;
+    border-color: #404040;
+}
+div.form-side-section {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+div.form-side-section > * {
+    border: 2px solid rgb(235, 239, 227);
+    margin-bottom: 10%;
+}
+@media (max-width: 1300px) {
+    div.contact-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    div.form-container {
+        flex-flow: column nowrap;
+    }
+    div.form-with-paragraph,
+    div.form-side-section {
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    form.contact-form *:not(textarea) {
+        width: 100%;
+    }
+    form.contact-form input,
+    form.contact-form button {
+        min-width: unset;
+    }
+}

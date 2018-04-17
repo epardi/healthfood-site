@@ -1,0 +1,65 @@
+div#gift-cards {
+	min-height: 70vh;
+	background: url('../../img/gift-card-background.jpg') center no-repeat;
+	background-size: cover;
+	margin-top: 30px;
+	margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#gift-cards > div {
+	margin: 5%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 57.5%;
+	text-align: center;
+	padding: 50px;
+	background-color: #ebefe3;
+}
+div#gift-cards > div > h1 {
+	font-size: 4em;
+	margin-top: 0;
+	line-height: 0.9;
+}
+div#gift-cards > div > h1,
+div#gift-cards > div > button {
+	color: #404040;
+}
+div#gift-cards > div > p:first-of-type,
+div#gift-cards > div > h1,
+div#gift-cards > div > button {
+	text-transform: uppercase;
+}
+div#gift-cards > div > p:first-of-type {
+	color: #707070;
+}
+div#gift-cards > div p:last-of-type {
+	line-height: 2;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+div#gift-cards > div button {
+	padding: 10px;
+	width: 200px;
+	font-weight: bold;
+	border: 2px solid #3A8013;
+	background-color: transparent;
+	cursor: pointer;
+	transition: width 0.2s ease-in-out;
+}
+div#gift-cards > div button:hover {
+	color: #3A8013;
+	border-color: #404040;
+	width: 210px;
+}
+div#gift-cards > div button span.fa-arrow-right {
+	padding-right: 0;
+}
+@media (max-width: 800px) {
+	div#gift-cards > div p:last-of-type {
+		margin-left: 10%;
+		margin-right: 10%;		
+	}
+}

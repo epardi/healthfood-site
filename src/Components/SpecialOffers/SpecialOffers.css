@@ -1,0 +1,58 @@
+div#special-offers {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: row;
+}
+div#specials-left-panel {
+	z-index: 1;
+	width: 50%;
+	background-color: #ebefe3;
+}
+div#specials-left-panel > p, div#specials-left-panel h1 {text-transform: uppercase;}
+div#specials-left-panel p, div#specials-left-panel h1 {
+	margin-left: 35%;
+}
+div#specials-left-panel h1 {
+	font-size: 4em;
+    line-height: .9;
+    color: #404040;
+    font-weight: normal;
+    margin-top: 0;
+}
+div#specials-left-panel > p {
+	margin-top: 10%;
+	color: #707070;
+}
+div#specials-left-panel > span {
+	display: none;
+}
+div#specials-right-panel {
+	width: 50%;
+	background: url('../../img/special-offers.jpg') no-repeat;
+	background-size: cover;
+}
+@media (max-width: 1500px) {
+	div#specials-left-panel p, div#specials-left-panel h1 {
+		margin-left: 15%;
+	}
+}
+@media (max-width: 800px) {
+	div#specials-left-panel {
+		width: 100%;
+	}
+	div#specials-left-panel > div:first-of-type {
+		width: 67%;
+	}
+	div#specials-left-panel > p {
+		margin: 1em 0 0 9.25%;
+	}
+	div#specials-left-panel h1 {
+		margin: 0.5em 0 0 9.25%;
+	}
+	div#specials-left-panel > span {
+		display: block;
+	}
+	div#specials-right-panel {
+		display: none;
+	}
+}

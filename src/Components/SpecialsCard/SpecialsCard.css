@@ -1,0 +1,58 @@
+div#specials-card {
+	width: 47.5%;
+	margin-left: 35%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	padding: 2em 4em 2em 2em;
+	background-color: white;
+	border: 2px solid #404040;
+	display: flex;
+	flex-flow: column nowrap;
+}
+div#specials-card p, div#specials-card h4 {
+	margin-left: 0;
+}
+div#specials-card h4 {
+	margin: 0 0 1em 0;
+	font-family: 'Teko';
+    font-size: 1.5em;
+    font-weight: normal;
+}
+div#specials-card div.special-item h4 {
+	margin: 2em 0 1em 0;
+}
+div#specials-card div.special-item:first-of-type h4 {
+	margin-top: 0;
+}
+div.special-item p {
+	display: inline;
+	line-height: 1.5;
+	margin-bottom: 2em;
+}
+div.special-item:last-of-type p {
+	margin-bottom: 0;
+}
+div.special-item p:after {
+	content: "";
+    display: inline-block;
+    border: 1px dashed #404040;
+    width: 21%;
+}
+div.special-item span {
+	color: #3a8014;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+@media (max-width: 1500px) {
+	div#specials-card {
+		width: 67%;
+		margin-left: 15%;
+		padding-right: 20px;
+	}
+}
+@media (max-width: 800px) {
+	div#specials-card {
+		margin: 2em 0 1em 9.25%;
+		padding: 7%;
+	}
+}

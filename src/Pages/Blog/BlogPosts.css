@@ -1,0 +1,107 @@
+div.blog-container {
+    border-top: 1px solid #ebefe3;
+}
+div#blog-posts {
+    width: 63%;
+}
+div.blog-post {
+    margin-bottom: 10%;
+}
+div.blog-post:first-of-type {
+    background-color: rgb(249, 252, 243);
+    padding: 3%;
+}
+img.blog-post-img {
+    max-width: 100%;
+    height: auto;
+}
+div.blog-post span {
+    text-transform: uppercase;
+}
+div.blog-post div.caption {
+    margin-top: 10px;
+}
+div.blog-post div.caption span:first-of-type {
+    font-size: .8em;
+    margin-right: 30px;
+    background-color: #3A8013;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+div.blog-post div.caption span:nth-of-type(2) a {
+    font-size: .8em;
+    color: #3A8013;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+div.blog-post div.caption span:nth-of-type(2) a:hover {
+    color: #404040;
+    text-decoration: underline;
+}
+div.blog-post div.caption hr {
+    width: 100%;
+    margin-top: 15px;
+}
+div.blog-post h1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #404040;
+    font-size: 1.5em;
+    transition: all 0.2s ease-in-out;
+}
+div.blog-post h1 a:hover {
+    color: #3A8013;
+    text-decoration: underline; 
+}
+div.blog-post p {
+    line-height: 2;
+}
+div.blog-post button {
+    width: 210px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #3A8013;
+    color: #404040;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+div.blog-post button:hover {
+    width: 220px;
+    color: #3A8013;
+    border-color: #404040;
+}
+@media (max-width: 1300px) {
+    div.blog-post h1 a {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 900px) {
+    div#blog-posts {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 550px) {
+    div.blog-post div.caption {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.blog-post div.caption span:first-of-type {
+        width: max-content;
+        margin-bottom: 30px;
+    }
+    div.blog-post button {
+        width: 180px;
+        padding: 5px;
+    }
+    div.blog-post button:hover {
+        width: 190px;
+    }
+}

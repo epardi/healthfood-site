@@ -1,0 +1,63 @@
+div#mailing-list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #ebefe3;
+}
+div#mailing-list > div > p:first-of-type {
+	font-family: 'Teko';
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+div#mailing-list > div > p:last-of-type {
+	color: #707070;
+    margin: 0;
+}
+div#mailing-list input {
+	outline-color: lightgray;
+    width: 40%;
+    height: 50px;
+    border: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.1em;
+    padding-left: 20px;
+    color: #707070;
+}
+div#mailing-list button {
+	height: 50px;
+    width: 150px;
+    background: transparent;
+    border: 2px solid #3A8013;
+    text-transform: uppercase;
+    color: darkslategray;
+    cursor: pointer;
+    font-family: 'Teko';
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+div#mailing-list button:hover {
+	color: #3A8013;
+	border-color: #404040;
+}
+@media (max-width: 800px) {
+	div#mailing-list {
+		flex-flow: column;
+		align-items: flex-start;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	div#mailing-list input {
+		width: 95%;
+		margin: 0;
+	}
+	div#mailing-list > div, div#mailing-list input, div#mailing-list button {
+		margin-bottom: 20px;
+	}
+}

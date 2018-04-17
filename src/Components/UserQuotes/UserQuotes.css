@@ -1,0 +1,66 @@
+div#user-quotes {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 85px 2%;
+}
+div.user-quote {
+	width: 20%;
+	margin-right: 1%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	border: 3px solid #ebefe3;
+}
+div.user-quote img {
+	position: relative;
+	top: -50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 5px solid white;
+
+}
+div.user-quote blockquote {
+	margin: 0 20px;
+	position: relative;
+	top: -50px;
+	font-style: italic;
+	line-height: 2;
+	text-align: center;
+	font-size: 1.1em;
+	color: #404040;
+}
+div.user-quote blockquote::before {
+	content: '\201c';
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-size: 3.5em;
+	line-height: 1;
+	position: relative;
+	top: 25px;
+	left: -15px;
+}
+div.user-quote p {
+	position: relative;
+	top: -20px;
+	color: #3A8013;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+@media (max-width: 1500px) {
+	div.user-quote {
+		width: 30.67%;
+	}
+}
+@media (max-width: 900px) {
+	div#user-quotes {
+		flex-flow: column nowrap;
+	}
+	div.user-quote {
+		margin-top: 100px;
+		width: 80%;
+		margin-right: 0;
+	}
+}

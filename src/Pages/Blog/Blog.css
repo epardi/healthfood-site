@@ -1,0 +1,29 @@
+div.blog-container > img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+div.blog {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 2% 20%;
+}
+@media (max-width: 1300px) {
+    div.blog, div.blog-container > img {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    div.blog-container > img {
+        max-width: 90%;
+    }
+}
+@media (max-width: 900px) {
+    div.blog {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}

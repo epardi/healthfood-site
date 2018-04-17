@@ -1,0 +1,78 @@
+div.blog-quote {
+    min-height: 50vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../img/pancakes-lg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10%;
+}
+div.quote-content {
+    margin: 5%;
+    padding: 5%;
+    background-color: #fff;
+}
+div.quote-content blockquote::before {
+    content: '\201C';
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 3.5em;
+    line-height: 1;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+}
+div.quote-content hr {
+    width: 100%;
+}
+div.quote-content blockquote {
+    position: relative;
+    margin-right: 0;
+    line-height: 2;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #404040;
+}
+div.quote-content span {
+    text-transform: uppercase;
+}
+div.quote-content div.caption span:first-of-type {
+    font-size: .8em;
+    margin-right: 30px;
+    background-color: #3A8013;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+div.quote-content div.caption span:nth-of-type(2) {
+    font-size: .8em;
+    color: #3A8013;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+div.quote-content div.caption span:nth-of-type(2):hover {
+    color: #404040;
+    text-decoration: underline;
+}
+div.quote-content blockquote + span {
+    margin-left: 40px;
+    color: #3A8013;
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+    div.quote-content blockquote {
+        font-size: 1em;
+    }
+}
+@media (max-width: 550px) {
+    div.quote-content div.caption {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    div.quote-content div.caption span:first-of-type {
+        width: max-content;
+        margin-bottom: 30px;
+    }
+}

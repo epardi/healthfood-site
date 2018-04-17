@@ -1,0 +1,89 @@
+div.container {
+	min-height: 40vh;
+	margin-left: 20%;
+	margin-right: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;	
+}
+div.column {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+div.column a {
+	text-decoration: none;
+	color: black;
+}
+div.column p {
+	line-height: 1.5;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+div.column span.fa-arrow-right {
+	font-size: initial;
+	font-weight: initial;
+	padding-right: 0;
+	padding-left: 10px;
+}
+div.column a p {
+	color: #3A8013;
+	transition: color 0.2s ease-in-out;
+}
+div.column a p:hover {
+	color: #404040;
+	text-decoration: underline;
+}
+div.column h1 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #404040;
+}
+div.column h1:hover {
+	color: #3A8013;
+}
+div#kiwiImg, div#papayaImg, div#peachImg {
+	margin: 50px auto 0 auto;
+}
+div#kiwiImg {
+	background: url('../../img/kiwi.png');
+	width: 82px;
+	height: 81px;
+}
+div#papayaImg {
+	background: url('../../img/papaya.png');
+	width: 110px;
+	height: 78px;
+}
+div#peachImg {
+	background: url('../../img/peach.png');
+	width: 100px;
+	height: 81px;
+}
+div.vertRule {
+	width: 2px;
+	height: 100px;
+	background: #3A8013;
+	position: relative;
+	top: 75px;
+}
+@media (max-width: 1500px) {
+	div.container {
+		margin-left: 7.5%;
+		margin-right: 7.5%;
+	}
+}
+@media (max-width: 799px) {
+	div.container {
+		flex-direction: column;
+	}
+	div.column:nth-of-type(even) {
+		display: none;
+	}
+	div.column:nth-of-type(odd):not(:last-of-type) {
+		border-bottom: 2px solid #ebefe3;
+		padding-bottom: 20px;
+	}
+}

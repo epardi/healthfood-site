@@ -1,0 +1,57 @@
+div.newsletter-side {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(249, 252, 243);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+div.newsletter-side > h3 {
+    text-transform: uppercase;
+    color: #404040;
+    margin: 0;
+    font-family: 'Teko';
+    font-size: 2em;
+    font-weight: normal;
+}
+div.newsletter-side > hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(235, 239, 227);
+}
+div.newsletter-side > form#newsletter-side-form {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+div.newsletter-side input {
+    padding: 10px;
+    border: 2px solid rgb(235, 239, 227);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+div.newsletter-side input:focus {
+    outline-color: rgb(212, 219, 199);
+}
+div.newsletter-side button {
+    text-transform: uppercase;
+    color: #404040;
+    background-color: transparent;
+    border: 2px solid #3A8013;
+    font-weight: bold;
+    margin-bottom: 5%;
+    padding: 10px;
+    width: 45%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+div.newsletter-side button:hover {
+    color: #3A8013;
+    border-color: #404040;
+    width: 55%;
+}

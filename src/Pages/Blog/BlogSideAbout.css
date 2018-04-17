@@ -1,0 +1,32 @@
+div.about-side {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+div.about-side hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(235, 239, 227);
+}
+div.about-side h3 {
+    text-transform: uppercase;
+    color: #404040;
+    margin: 0;
+    font-family: 'Teko';
+    font-size: 2em;
+    font-weight: normal;
+}
+div.about-side img:first-of-type {
+    width: 100%;
+    height: auto;
+}
+div.about-side img:last-of-type {
+    max-width: 100%;
+    height: auto;
+}
+div.about-side p {
+    line-height: 2;
+    font-size: 0.9em;
+}

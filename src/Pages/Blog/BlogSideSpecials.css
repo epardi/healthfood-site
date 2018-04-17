@@ -1,0 +1,39 @@
+div.specials-side {
+    background-color: rgb(249, 252, 243);
+    padding: 10%;
+}
+div.specials-side h3 {
+    width: max-content;
+    text-transform: uppercase;
+    font-family: 'Teko';
+    color: #404040;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+div.specials-side h3:hover {
+    color: #3A8013;
+    text-decoration: underline;
+    cursor: pointer;
+}
+div.specials-side a {
+    text-decoration: none;
+    cursor: default;
+}
+div.specials-side hr {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+div.specials-side > img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+div.specials-side > p {
+    line-height: 2;
+    font-size: 0.9em;
+    margin: 0;
+}

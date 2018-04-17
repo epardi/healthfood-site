@@ -1,0 +1,24 @@
+div.blog-side-section {
+    width: 30%;
+}
+div.blog-side-section > img {
+    max-width: 100%;
+    height: auto; 
+}
+div.blog-side-section > * {
+    margin-bottom: 10%;
+}
+div.blog-side-section > :nth-child(1),
+div.blog-side-section > :nth-child(2),
+div.blog-side-section > :nth-child(5) {
+    border: 2px solid rgb(235, 239, 227);
+}
+@media (max-width: 900px) {
+    div.blog-side-section {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

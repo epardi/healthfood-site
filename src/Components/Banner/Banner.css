@@ -1,0 +1,22 @@
+div.banner {
+	height: 30vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+div.header {
+	height: 100%;
+	opacity: 0.75;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+div.banner h1 {
+	margin: 0;
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #202020;
+}

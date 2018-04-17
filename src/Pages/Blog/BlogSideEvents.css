@@ -1,0 +1,68 @@
+div.events-side {
+    position: relative;
+    width: 100%;
+}
+div.events-side::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+div.events-side:hover:after {
+    opacity: 0.4;
+}
+div.events-side > img {
+    width: 100%;
+    height: auto;
+}
+div.events-content {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+}
+div.events-content > p {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5%;
+}
+div.events-content > h1 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    margin: 0;
+    line-height: 1;
+    font-weight: bold;
+    color: #404040;
+    letter-spacing: 1px;
+    padding: 5%;
+    word-spacing: 100vw;
+}
+div.events-content > h1 > span {
+    color: #3A8013;
+}
+div.events-content > button {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    width: 200px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    background-color: #3A8013;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+div.events-content > button:hover {
+    background-color: #404040;
+}
+div.events-content > button > span.fa-arrow-right {
+    color: #fff;
+}
