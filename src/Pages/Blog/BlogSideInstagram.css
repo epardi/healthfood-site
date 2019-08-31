@@ -1,48 +1,48 @@
 div.instagram-side {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10%;
 }
 div.instagram-side > h3 {
-    text-transform: uppercase;
-    color: #404040;
-    margin: 0;
-    font-family: 'Teko';
-    font-size: 2em;
-    font-weight: normal;
+	text-transform: uppercase;
+	color: #404040;
+	margin: 0;
+	font-family: 'Teko';
+	font-size: 2em;
+	font-weight: normal;
 }
 div.instagram-side > hr {
-    width: 100%;
-    height: 2px;
-    background-color: rgb(235, 239, 227);
+	width: 100%;
+	height: 2px;
+	background-color: rgb(235, 239, 227);
 }
 div.grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-gap: 3%;
-    margin-bottom: 5%;
-    align-items: stretch;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-gap: 0 3%;
+	margin-bottom: 5%;
+	align-items: stretch;
 }
 div.grid > img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10%;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10%;
 }
 div.instagram-side > button {
-    padding: 10px;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 1px solid #3A8013;
-    border-radius: 4px;
-    color: #3A8013;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid #3a8013;
+	border-radius: 4px;
+	color: #3a8013;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
 }
 div.instagram-side > button:hover {
-    color: #fff;
-    background-color: #3A8013;
+	color: #fff;
+	background-color: #3a8013;
 }

@@ -17,10 +17,10 @@ div.select-container {
 }
 div.select-container select {
 	font-family: 'Open Sans';
-    font-size: 1em;
-    color: #707070;
-    border: 2px solid #ebefe3;
-    z-index: 1;
+	font-size: 1em;
+	color: #707070;
+	border: 2px solid #ebefe3;
+	z-index: 1;
 }
 div#shop-items-grid {
 	display: grid;
@@ -42,22 +42,23 @@ div.shop-item {
 }
 div.shop-item > span.shop-item-price + p {
 	font-size: 1.75em;
-    color: #3A8013;
-    margin-top: .5em;
-    margin-bottom: 0;
-} 
+	color: #3a8013;
+	margin-top: .5em;
+	margin-bottom: 0;
+}
 span.shop-item-price {
 	position: absolute;
 	top: 5px;
 	color: #fff;
-	background-color: #3A8013;
+	background-color: #3a8013;
 	margin: 5px 0;
 	font-size: 1.4em;
 	letter-spacing: 1px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
-span.shop-item-price, div.shop-item > p {
+span.shop-item-price,
+div.shop-item > p {
 	font-family: 'Teko';
 }
 div.starContainer {
@@ -66,10 +67,12 @@ div.starContainer {
 span.fa-star {
 	padding-right: 0;
 }
-span.fa-star.star-color, span.fa-star.star-color:hover {
-	color: #3A8013;
+span.fa-star.star-color,
+span.fa-star.star-color:hover {
+	color: #3a8013;
 }
-span.fa-star, span.fa-star:hover {
+span.fa-star,
+span.fa-star:hover {
 	color: lightgray;
 }
 div.shop-item > img {
@@ -80,29 +83,29 @@ div.shop-item > img {
 p.old-honey-price {
 	position: absolute;
 	color: #77a464;
-    background-color: #3A8013;
-    margin: 0;
-    font-size: 1.4em;
-    letter-spacing: 1px;
-    padding-left: 10px;
-    padding-right: 13.5px;
-    font-family: 'Teko';
-    width: max-content;
-    text-decoration: line-through;
+	background-color: #3a8013;
+	margin: 0;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	padding-left: 10px;
+	padding-right: 13.5px;
+	font-family: 'Teko';
+	width: max-content;
+	text-decoration: line-through;
 }
 img[src*='honey'] + span.shop-item-price {
-    top: 30px;
+	top: 30px;
 }
 span.sale {
 	position: absolute;
 	right: -6px;
 	top: -10px;
-    background-color: #3A8013;
-    color: #fff;
-    font-family: 'Open Sans';
-    border-radius: 100%;
-    padding: 10px 5px;
-    font-size: 1.2em;
+	background-color: #3a8013;
+	color: #fff;
+	font-family: 'Open Sans';
+	border-radius: 100%;
+	padding: 10px 5px;
+	font-size: 1.2em;
 }
 span.fa-cog {
 	display: none;
@@ -117,23 +120,24 @@ span.fa-cog {
 	transition: all 0.2s ease-in-out;
 }
 .cart-link:hover {
-	color: #3A8013;
+	color: #3a8013;
 }
-div.shop-item button, div.shop-item > p {
+div.shop-item button,
+div.shop-item > p {
 	text-transform: uppercase;
 }
 div.shop-item button {
 	background: transparent;
 	width: 100%;
 	padding: 10px;
-	border: 2px solid #3A8013;
+	border: 2px solid #3a8013;
 	cursor: pointer;
 	font-weight: bold;
 	transition: all 0.2s ease-in-out;
 }
 div.shop-item button:hover {
 	border-color: #404040;
-	color: #3A8013;
+	color: #3a8013;
 }
 div.shop-item button:disabled,
 div.shop-item button:disabled:hover {
@@ -167,6 +171,7 @@ span.fa-arrow-right {
 @media (max-width: 800px) {
 	div#shop-items-grid {
 		grid-template-columns: auto;
+		grid-gap: 0;
 	}
 	div.shop-item {
 		margin-bottom: 5%;
