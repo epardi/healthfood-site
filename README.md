@@ -1,4 +1,4 @@
-# https://github.com/epardi/healthfood-site/
+# https://epardi.github.io/healthfood-site
 
 
 This project is basically a clone of a WordPress theme made by Anariel Design. You can check out the original here: https://anarieldesign.com. I found it on the Envato site’s marketplace and wanted to see if I could make it with my own code. Obviously, I didn’t design this website, but the code in this project is all my own.  I only referred to the original site’s CSS for a particular font, color, or something like that. I made it with React.js and “create-react-app.”  The routing was done with React Router v4, and the Google maps component was made with React Google Maps. Other than that, it’s just plain HTML, CSS, and JavaScript.
